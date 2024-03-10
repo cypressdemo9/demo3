@@ -1,0 +1,148 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 3,
+    "failures": -2,
+    "start": "2024-03-09T09:36:48.655Z",
+    "end": "2024-03-09T09:36:48.688Z",
+    "duration": 33,
+    "testsRegistered": 3,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "100289bf-4d36-4f73-82f8-90e2e3d5b0df",
+      "title": "",
+      "fullFile": "cypress/e2e/hooksdemo.cy.js",
+      "file": "cypress/e2e/hooksdemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1402e851-dfd5-4ba3-b2df-4d8831bae4c6",
+          "title": "Login Suite 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify successful login with valid username and password",
+              "fullTitle": "Login Suite 1 Verify successful login with valid username and password",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.log('Verify successful login with valid username and password');",
+              "err": {},
+              "uuid": "b1b5f6ee-0d37-4bab-a218-068192ad1601",
+              "parentUUID": "1402e851-dfd5-4ba3-b2df-4d8831bae4c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify successful login with invalid username and password",
+              "fullTitle": "Login Suite 1 Verify successful login with invalid username and password",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.log('Verify successful login with invalid username and password');",
+              "err": {},
+              "uuid": "d0b75a3e-2366-49b7-ad10-c04bacaff4b6",
+              "parentUUID": "1402e851-dfd5-4ba3-b2df-4d8831bae4c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify successful login with valid username and invalid password",
+              "fullTitle": "Login Suite 1 Verify successful login with valid username and invalid password",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.log('Verify successful login with valid username and invalid password');",
+              "err": {},
+              "uuid": "e38597c7-cf97-4a0c-b75f-ce2971414e1c",
+              "parentUUID": "1402e851-dfd5-4ba3-b2df-4d8831bae4c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "b1b5f6ee-0d37-4bab-a218-068192ad1601",
+            "d0b75a3e-2366-49b7-ad10-c04bacaff4b6",
+            "e38597c7-cf97-4a0c-b75f-ce2971414e1c"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

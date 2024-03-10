@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-09T06:59:18.149Z",
+    "end": "2024-03-09T06:59:19.495Z",
+    "duration": 1346,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fc184979-d5be-4605-a3ac-8598a9167a30",
+      "title": "",
+      "fullFile": "cypress/e2e/login.cy.js",
+      "file": "cypress/e2e/login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d0e31bad-708c-4db9-9f64-2672f4a7d541",
+          "title": "Login to Swag Labs",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add to Product to Cart",
+              "fullTitle": "Login to Swag Labs Add to Product to Cart",
+              "timedOut": null,
+              "duration": 1322,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const loginPage = new _LoginPage.default();\nconst homePage = new _HomePage.default();\nconst cartPage = new _CartPage.default();\nloginPage.visit().checkPageUrl();\nloginPage.loginwithCredentials('standard_user', 'secret_sauce');\nhomePage.checkPageUrl();\nhomePage.addProductToCart('Sauce Labs Bolt T-Shirt');\nhomePage.header.clickShoppingCartButton();\ncartPage.getProductName().should('eq', 'Sauce Labs Bolt T-Shirt');",
+              "err": {},
+              "uuid": "e1087908-9e0c-4b55-baa3-d4b281276628",
+              "parentUUID": "d0e31bad-708c-4db9-9f64-2672f4a7d541",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e1087908-9e0c-4b55-baa3-d4b281276628"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1322,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
