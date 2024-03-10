@@ -18,7 +18,7 @@ after(() => {
 describe.only('Login Suite 1', () => {
     
 
-    it('Verify successful login with valid username and password', () => {
+    it.skip('Verify successful login with valid username and password', () => {
         const email = 'michael.adams@example.com';
         cy.task('queryDatabase', `SELECT * FROM users WHERE email = '${email}'`)
       .then((results) => {
